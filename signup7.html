@@ -1,0 +1,16 @@
+<input id="case" placeholder="Enter Case ID">
+
+<button onclick="verifyCase()">Verify</button>
+
+<p id="result"></p>
+
+<script>
+function verifyCase(){
+    let id = document.getElementById("case").value;
+
+    if(id === "778249"){
+        document.getElementById("result").innerText =
+        "Case belongs to Apple. Technician: Jacob Miller";
+    }
+}
+</script>
