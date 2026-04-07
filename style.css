@@ -1,0 +1,27 @@
+body {
+    background:#0b1a2f;
+    color:white;
+    font-family:Arial;
+    text-align:center;
+}
+
+.container {
+    margin-top:100px;
+}
+
+input, select, button {
+    display:block;
+    margin:10px auto;
+    padding:10px;
+    width:250px;
+}
+
+button {
+    background:#1f4ed8;
+    color:white;
+    border:none;
+}
+
+.logo {
+    width:120px;
+}
