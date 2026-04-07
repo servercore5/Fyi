@@ -1,0 +1,20 @@
+<input id="username" placeholder="Username">
+<button onclick="checkUser()">Check Availability</button>
+
+<p id="userStatus"></p>
+
+<input type="password" id="pass" placeholder="Password">
+<input type="password" id="confirm" placeholder="Confirm Password">
+
+<p id="match"></p>
+
+<button onclick="nextPage()">Next</button>
+
+<script>
+function checkUser(){
+    document.getElementById("userStatus").innerText="Checking...";
+    setTimeout(()=>{
+        document.getElementById("userStatus").innerText="Username Available ✅";
+    },3000);
+}
+</script>
