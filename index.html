@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Secure Access</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+    <img src="125.png" class="logo">
+
+    <h2>Confidential Access Portal</h2>
+    <p>Enter Security Clearance Code</p>
+
+    <input type="password" id="code" placeholder="Enter Code">
+    <button onclick="checkCode()">Access Portal</button>
+
+    <p id="error"></p>
+</div>
+
+<script>
+function checkCode(){
+    let code = document.getElementById("code").value;
+
+    if(code === "231897"){
+        window.location.href = "auth.html";
+    } else {
+        document.getElementById("error").innerText = "Invalid Security Code";
+    }
+}
+</script>
+</body>
+</html>
