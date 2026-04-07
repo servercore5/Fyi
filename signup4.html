@@ -1,0 +1,23 @@
+<select>
+<option>1 Device</option>
+<option>2 Devices</option>
+<option>3 Devices</option>
+<option>4 Devices</option>
+<option>5 Devices</option>
+</select>
+
+<input placeholder="Enter Device IP">
+
+<button onclick="verifyIP()">Verify</button>
+
+<p id="status"></p>
+
+<script>
+function verifyIP(){
+    document.getElementById("status").innerText = "Verifying...";
+    
+    setTimeout(()=>{
+        document.getElementById("status").innerText = "IP Verified Successfully";
+    },2000);
+}
+</script>
