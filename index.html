@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Secure Access</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+<header>
+  <img src="125.png" class="logo">
+  <h3>Fedral Trade Commission Portal</h3>
+</header>
+
 <div class="container">
-    <img src="125.png" class="logo">
+<h2>Security Access</h2>
 
-    <h2>Confidential Access Portal</h2>
-    <p>Enter Security Clearance Code</p>
+<input id="code" placeholder="Enter Code">
+<button onclick="go()">Enter</button>
 
-    <input type="password" id="code" placeholder="Enter Code">
-    <button onclick="checkCode()">Access Portal</button>
-
-    <p id="error"></p>
+<p id="msg"></p>
 </div>
 
-<script>
-function checkCode(){
-    let code = document.getElementById("code").value;
+<footer>
+© 2026 Secure System
+</footer>
 
-    if(code === "231897"){
-        window.location.href = "auth.html";
-    } else {
-        document.getElementById("error").innerText = "Invalid Security Code";
-    }
+<script>
+function go(){
+ let c=document.getElementById("code").value;
+ if(c==="231897"){
+  location="auth.html";
+ } else {
+  msg.innerText="Invalid Code";
+ }
 }
 </script>
+
 </body>
 </html>
