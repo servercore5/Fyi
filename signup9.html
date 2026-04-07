@@ -1,0 +1,15 @@
+<textarea maxlength="20000" placeholder="Describe your case..."></textarea>
+
+<button onclick="submitData()">Submit</button>
+
+<p id="status"></p>
+
+<script>
+function submitData(){
+    document.getElementById("status").innerText="Analyzing...";
+    setTimeout(()=>{
+        document.getElementById("status").innerText =
+        "Submission Received. You will be notified.";
+    },2000);
+}
+</script>
