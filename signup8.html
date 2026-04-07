@@ -1,0 +1,14 @@
+<input id="key" placeholder="Enter Security Key">
+
+<button onclick="verifyKey()">Verify</button>
+
+<p id="status"></p>
+
+<script>
+function verifyKey(){
+    if(document.getElementById("key").value === "876875689008"){
+        document.getElementById("status").innerText =
+        "Officer: Eric C Monti | Badge EMC1978FTC";
+    }
+}
+</script>
